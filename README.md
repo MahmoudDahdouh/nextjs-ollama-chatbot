@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ AI Chatbot using Ollama
 
-## Getting Started
+A simple chat UI built with Next.js 14, allowing users to send messages and receive responses from an LLM loaded on Ollama locally.
 
-First, run the development server:
+## 💻 Tech Stack
+
+-   Next.js with TypeScript
+-   [Ollama](https://github.com/ollama/ollama)
+-   [AI SDK UI](https://ai-sdk.dev/docs/ai-sdk-ui)
+-   [Shadcn UI](https://ui.shadcn.com/)
+-   **State Management:** [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction)
+
+## 🎥 Demo
+
+![ai chatbot demo](/ai-chatbot-demo.gif)
+
+## 🛠️ Setup Instructions
+
+Before you start, make sure you have [Ollama](https://github.com/ollama/ollama) and [`llama3.2:1b`](https://ollama.com/library/llama3.2:1b) model installed on your machine.
+
+use `ollama list` in the terminal to list available models.
+
+```bash
+ollama list
+```
+
+check that ollama is running on http://127.0.0.1:11434
+
+```bash
+Ollama is running
+```
+
+### clone the repo
+
+```bash
+git clone https://github.com/MahmoudDahdouh/nextjs-ollama-chatbot.git
+```
+
+### install dependencies
+
+```bash
+cd nextjs-ollama-chatbot
+npm install
+```
+
+### run the app
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+visit [`http://localhost:3000`](http://localhost:3000) to see the app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✍️ Author
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[Mahmoud Dahdouh](https://github.com/MahmoudDahdouh)
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
